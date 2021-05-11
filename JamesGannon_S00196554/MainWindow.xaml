@@ -6,10 +6,19 @@
         xmlns:local="clr-namespace:JamesGannon_S00196554"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <DataTemplate x:Key="GamesLbx">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="{Binding GameImage}" Margin="5"/>
+                <TextBlock Text="{Binding Name}" FontSize="18" Margin="15"/>
+                <TextBlock Text="{Binding MetacriticScore}" FontSize="18" Margin="5"/>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
-        <ListBox x:Name="GamesLbx" HorizontalAlignment="Left" Height="300" Margin="105,57,0,0" VerticalAlignment="Top" Width="255" SelectionChanged="GamesLbx_SelectionChanged"/>
-        <TextBlock x:Name="DetailsTblk" HorizontalAlignment="Left" Height="80" Margin="432,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="215" Margin="432,142,0,0" VerticalAlignment="Top" Width="250"/>
+        <ListBox x:Name="GamesLbx" HorizontalAlignment="Left" Height="193" Margin="10,10,0,0" VerticalAlignment="Top" Width="276" SelectionChanged="GamesLbx_SelectionChanged"/>
+        <TextBlock x:Name="DetailsTblk" HorizontalAlignment="Left" Height="201" Margin="10,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="772"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="193" Margin="532,10,0,0" VerticalAlignment="Top" Width="250"/>
 
     </Grid>
 </Window>
