@@ -48,5 +48,49 @@ namespace JamesGannon_S00196554
                 //image.Source = image(selectedGame.GameImage);
             }
         }
+
+        private void Anybtn_Checked(object sender, RoutedEventArgs e)
+        {
+            if((bool)Anybtn.IsChecked)
+            {
+                var query = from g in db.Games
+                            select g;
+                GamesLbx.ItemsSource = null;
+                GamesLbx.ItemsSource = query.ToList();
+            }
+            else if((bool)Xboxbtn.IsChecked)
+            {
+                var query = from g in db.Games
+                            where g.Platform.Contains("Xbox")
+                            select g;
+                GamesLbx.ItemsSource = null;
+                GamesLbx.ItemsSource = query.ToList();
+            }
+            else if ((bool)PlayStationbtn.IsChecked)
+            {
+                var query = from g in db.Games
+                            where g.Platform.Contains("PS")
+                            select g;
+                GamesLbx.ItemsSource = null;
+                GamesLbx.ItemsSource = query.ToList();
+            }
+            else if ((bool)Switchbtn.IsChecked)
+            {
+                var query = from g in db.Games
+                            where g.Platform.Contains("Switch")
+                            select g;
+                GamesLbx.ItemsSource = null;
+                GamesLbx.ItemsSource = query.ToList();
+            }
+            else if ((bool)PCbtn.IsChecked)
+            {
+                var query = from g in db.Games
+                            where g.Platform.Contains("PC")
+                            select g;
+                GamesLbx.ItemsSource = null;
+                GamesLbx.ItemsSource = query.ToList();
+            }
+
+        }
     }
 }

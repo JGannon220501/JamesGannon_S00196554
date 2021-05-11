@@ -34,7 +34,12 @@
     <Grid>
         <ListBox x:Name="GamesLbx" HorizontalAlignment="Left" Height="125" Margin="10,43,0,0" VerticalAlignment="Top" Width="276" SelectionChanged="GamesLbx_SelectionChanged"/>
         <TextBlock x:Name="DetailsTblk" HorizontalAlignment="Left" Height="201" Margin="10,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="772"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="163" Margin="571,10,0,0" VerticalAlignment="Top" Width="201"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="163" Margin="581,10,0,0" VerticalAlignment="Top" Width="201"/>
+        <RadioButton x:Name="Anybtn" Content="Any" HorizontalAlignment="Left" Height="18" Margin="300,43,0,0" VerticalAlignment="Top" Width="122" Checked="Anybtn_Checked"/>
+        <RadioButton x:Name="PlayStationbtn" Content="Playstation" HorizontalAlignment="Left" Height="18" Margin="300,89,0,0" VerticalAlignment="Top" Width="122"/>
+        <RadioButton x:Name="Xboxbtn" Content="Xbox" HorizontalAlignment="Left" Height="18" Margin="300,66,0,0" VerticalAlignment="Top" Width="122"/>
+        <RadioButton x:Name="Switchbtn" Content="Switch" HorizontalAlignment="Left" Height="18" Margin="300,112,0,0" VerticalAlignment="Top" Width="122"/>
+        <RadioButton x:Name="PCbtn" Content="PC" HorizontalAlignment="Left" Height="18" Margin="300,135,0,0" VerticalAlignment="Top" Width="122"/>
 
     </Grid>
 </Window>
