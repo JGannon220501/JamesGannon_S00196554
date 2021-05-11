@@ -14,11 +14,27 @@
                 <TextBlock Text="{Binding MetacriticScore}" FontSize="18" Margin="5"/>
             </StackPanel>
         </DataTemplate>
+        <DataTemplate x:Key="imagelbx">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="{Binding GameImage}"/>
+            </StackPanel>
+        </DataTemplate>
+
+        <Style TargetType="ListBox">
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="Firebrick"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
     </Window.Resources>
     <Grid>
-        <ListBox x:Name="GamesLbx" HorizontalAlignment="Left" Height="193" Margin="10,10,0,0" VerticalAlignment="Top" Width="276" SelectionChanged="GamesLbx_SelectionChanged"/>
-        <TextBlock x:Name="DetailsTblk" HorizontalAlignment="Left" Height="201" Margin="10,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="772"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="193" Margin="532,10,0,0" VerticalAlignment="Top" Width="250"/>
+        <ListBox x:Name="GamesLbx" HorizontalAlignment="Left" Height="125" Margin="10,43,0,0" VerticalAlignment="Top" Width="276" SelectionChanged="GamesLbx_SelectionChanged"/>
+        <TextBlock x:Name="DetailsTblk" HorizontalAlignment="Left" Height="201" Margin="10,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="772"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="163" Margin="571,10,0,0" VerticalAlignment="Top" Width="201"/>
 
     </Grid>
 </Window>

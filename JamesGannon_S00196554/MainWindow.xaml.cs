@@ -45,6 +45,7 @@ namespace JamesGannon_S00196554
                                    $"\nPlatform: {selectedGame.Platform} " +
                                    $"\nMetaCritic Score: {selectedGame.MetacriticScore} " +
                                    $"\nPrice: {selectedGame.Price}";
+                //image.Source = image(selectedGame.GameImage);
             }
         }
     }
