@@ -11,13 +11,13 @@ namespace UnitTestProject1
         public void TestMethod1()
         {
             //ARRANGE
-            Game game1 = new Game();
-            game1.Price = 100;
+            Game g1 = new Game();
+            g1.Price = 100;
             decimal finalPrice = 50;
             //ACT
-            game1.DecreasePrice(50);
+            g1.DecreasePrice(50);
             //ASSERT
-            Assert.AreEqual(finalPrice, game1.Price);
+            Assert.AreEqual(finalPrice, g1.Price);
         }
     }
 }
