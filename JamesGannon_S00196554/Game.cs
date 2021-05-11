@@ -15,6 +15,9 @@ namespace JamesGannon_S00196554
         public decimal Price { get; set; }
         public string GameImage { get; set; }
 
-
+        public void DecreasePrice(decimal discount)
+        {
+            Price -= discount;
+        }
     }
 }
